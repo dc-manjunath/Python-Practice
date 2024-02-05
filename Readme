@@ -1,0 +1,39 @@
+==> Class Attributes
+
+=> Shared among all instances: They belong to the class itself, meaning their value is the same for every  object created from that class.
+=> Defined outside the __init__() method: They are usually defined at the top of the class body, before any methods.
+=> Accessed using either the class name or an object: You can access them using ClassName.class_attribute or object_name.class_attribute.
+=> Changes affect all instances: Modifying a class attribute using the class name will change its value for all existing and future objects.
+
+==> Instance Attributes
+
+=> Unique to each instance: They are specific to a particular object and hold data that may vary between objects of the same class.
+=> Defined inside the __init__() method: They are created when a new object is initialized using the __init__() constructor.
+=> Accessed only through an object: You can only access them using object_name.instance_attribute.
+=> Changes affect only the specific instance: Modifying an instance attribute only changes its value for that particular object.
+
+
+
+==> Class Methods
+
+=> Bound to the class, not to specific instances: They are called on the class itself, using ClassName.class_method().
+=> Access and modify class attributes: They can access and change class attributes, which are shared among all instances of the class.
+=> Receive the class as the first argument: They have a cls parameter, which refers to the class itself.
+
+==> Common use cases:
+Creating alternative constructors: Providing different ways to create objects of the class, such as from different data formats or external sources.
+Accessing or modifying class attributes: Managing class-level data that needs to be shared across all instances.
+Implementing class-level operations: Performing actions that don't require specific object data but are related to the class as a whole.
+
+
+===> Instance Methods
+
+==> Bound to individual instances: They are called on objects of the class, using object_name.instance_method().
+==> Operate on instance-specific data: They work with instance attributes, which are unique to each object.
+==> Receive the instance as the first argument: They have a self parameter, which refers to the current object.
+
+==> Common use cases:
+Performing actions on object data: Manipulating or processing the data stored within a specific object.
+Accessing or modifying instance attributes: Reading or changing the values of attributes that belong to a particular object.
+Defining object behavior: Implementing the actions that objects of the class can perform.
+
